@@ -19,7 +19,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func btnExit(_ sender: Any) {
+        let isipesan = "Keluar"
+        let pop = UIAlertController(title: "Anda Yakin Ingin Keluar?", message: isipesan, preferredStyle: UIAlertControllerStyle.alert)
+        // perintah untuk membuat aplikasi keluar
+        let aksi = UIAlertAction(title: "keluar", style: UIAlertActionStyle.destructive) { (aksi) in
+            exit(0)
+        }
+        // menambahkan aksi ke button aksi
+        pop.addAction(aksi)
+        present(pop, animated: true, completion: nil)
+    }
+    
 
 }
 

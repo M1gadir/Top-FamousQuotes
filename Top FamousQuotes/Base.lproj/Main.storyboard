@@ -1,24 +1,786 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pyu-hp-dat">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Top Famous Quotes -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Top_FamousQuotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WF0-bC-Uhu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-MU-0lh">
+                                <rect key="frame" x="36" y="171" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="BJ Habibie"/>
+                                <connections>
+                                    <segue destination="N6j-dz-mt0" kind="show" id="QuJ-mH-GLG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-ft-Ph4">
+                                <rect key="frame" x="36" y="319" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Thomas Alva Edison"/>
+                                <connections>
+                                    <segue destination="Bg8-kQ-N7Z" kind="show" id="tg6-BW-n7l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TG-F5-xUn">
+                                <rect key="frame" x="207.5" y="242" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Felix Siauw"/>
+                                <connections>
+                                    <segue destination="Ltl-gg-mb1" kind="show" id="lB3-Rl-r2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyM-Pk-aej">
+                                <rect key="frame" x="36" y="242" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Soekarno"/>
+                                <connections>
+                                    <segue destination="Mjb-NW-N2l" kind="show" id="kbu-SL-9AB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-gW-3D3">
+                                <rect key="frame" x="207.5" y="171" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Albert Einstein"/>
+                                <connections>
+                                    <segue destination="cbo-RQ-zzk" kind="show" id="BHf-yz-6zQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fY-5c-Lt9">
+                                <rect key="frame" x="207.5" y="319" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Raditya Dika"/>
+                                <connections>
+                                    <segue destination="1X6-Vn-QQG" kind="show" id="xCJ-Qi-Igs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaH-4n-37f">
+                                <rect key="frame" x="163" y="576" width="65" height="61"/>
+                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="btnExit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3K-bd-C1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nch-hZ-4K2">
+                                <rect key="frame" x="207.5" y="399" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Benyamin Franklin"/>
+                                <connections>
+                                    <segue destination="TOa-Ku-HfO" kind="show" id="20I-HW-thT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-XB-C7Q">
+                                <rect key="frame" x="36" y="399" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Nelson Mandela"/>
+                                <connections>
+                                    <segue destination="yU5-Cd-0jl" kind="show" id="4Tv-Pr-L2Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mX-hw-frJ">
+                                <rect key="frame" x="36" y="462" width="139" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ust Abdul Somad"/>
+                                <connections>
+                                    <segue destination="wMs-wB-PmC" kind="show" id="bys-bj-H9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-zd-6Ov">
+                                <rect key="frame" x="207.5" y="462" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bill Gates"/>
+                                <connections>
+                                    <segue destination="S7I-VM-dVx" kind="show" id="hCe-dc-lQL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6mX-hw-frJ" firstAttribute="top" secondItem="LOU-XB-C7Q" secondAttribute="bottom" constant="33" id="0vi-Z4-u9B"/>
+                            <constraint firstItem="WF0-bC-Uhu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2rH-7B-zRb"/>
+                            <constraint firstItem="nch-hZ-4K2" firstAttribute="top" secondItem="7fY-5c-Lt9" secondAttribute="bottom" constant="50" id="3DI-Q9-wRo"/>
+                            <constraint firstItem="6mX-hw-frJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LOU-XB-C7Q" secondAttribute="trailing" id="4Js-t9-SXe"/>
+                            <constraint firstItem="Jpx-MU-0lh" firstAttribute="leading" secondItem="WyM-Pk-aej" secondAttribute="leading" id="5U6-19-ePx"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="top" secondItem="nch-hZ-4K2" secondAttribute="bottom" constant="33" id="9Dy-Cu-4Rx"/>
+                            <constraint firstItem="1TG-F5-xUn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7fY-5c-Lt9" secondAttribute="leading" id="9Fh-nq-ZDF"/>
+                            <constraint firstItem="eaH-4n-37f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="DJa-zK-och"/>
+                            <constraint firstItem="eaH-4n-37f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="273" id="Gus-4c-dVH"/>
+                            <constraint firstItem="1TG-F5-xUn" firstAttribute="top" secondItem="tdM-gW-3D3" secondAttribute="bottom" constant="41" id="LMX-WI-Xuu"/>
+                            <constraint firstItem="6mX-hw-frJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LOU-XB-C7Q" secondAttribute="leading" id="MV5-fl-4fs"/>
+                            <constraint firstItem="WyM-Pk-aej" firstAttribute="top" secondItem="Jpx-MU-0lh" secondAttribute="bottom" constant="41" id="N1f-EE-QFh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WF0-bC-Uhu" secondAttribute="trailing" id="PLB-id-v1O"/>
+                            <constraint firstItem="1TG-F5-xUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="82.5" id="QtS-0t-x4X"/>
+                            <constraint firstItem="LOU-XB-C7Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hSt-ft-Ph4" secondAttribute="leading" id="R9I-ql-6Oc"/>
+                            <constraint firstItem="LOU-XB-C7Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82.5" id="SI0-Kc-i2t"/>
+                            <constraint firstItem="7fY-5c-Lt9" firstAttribute="top" secondItem="1TG-F5-xUn" secondAttribute="bottom" constant="47" id="ShO-6w-3Bt"/>
+                            <constraint firstItem="7fY-5c-Lt9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Th5-oe-kTC"/>
+                            <constraint firstItem="WyM-Pk-aej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-76" id="Tzl-GC-uRJ"/>
+                            <constraint firstItem="1TG-F5-xUn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7fY-5c-Lt9" secondAttribute="trailing" id="Wvs-cX-czy"/>
+                            <constraint firstItem="nch-hZ-4K2" firstAttribute="trailing" secondItem="7fY-5c-Lt9" secondAttribute="trailing" id="XC2-7H-nYy"/>
+                            <constraint firstItem="tdM-gW-3D3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="82" id="XRA-1q-EzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WF0-bC-Uhu" secondAttribute="bottom" id="aQF-tJ-b7m"/>
+                            <constraint firstItem="WyM-Pk-aej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82" id="aoy-gK-IpE"/>
+                            <constraint firstItem="nch-hZ-4K2" firstAttribute="leading" secondItem="7fY-5c-Lt9" secondAttribute="leading" id="aw2-XP-SKh"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="trailing" secondItem="nch-hZ-4K2" secondAttribute="trailing" id="cEM-wf-1T1"/>
+                            <constraint firstItem="tdM-gW-3D3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1TG-F5-xUn" secondAttribute="trailing" id="cdA-0x-0t8"/>
+                            <constraint firstItem="7fY-5c-Lt9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="82.5" id="dFV-zw-Wvg"/>
+                            <constraint firstItem="LOU-XB-C7Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="dQc-sO-DY3"/>
+                            <constraint firstItem="hSt-ft-Ph4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WyM-Pk-aej" secondAttribute="leading" id="dwe-zp-gkY"/>
+                            <constraint firstItem="tdM-gW-3D3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1TG-F5-xUn" secondAttribute="leading" id="g8h-cf-f6n"/>
+                            <constraint firstItem="tdM-gW-3D3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-147.5" id="h34-2K-a8W"/>
+                            <constraint firstItem="hSt-ft-Ph4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WyM-Pk-aej" secondAttribute="trailing" id="l0b-78-wUY"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="leading" secondItem="nch-hZ-4K2" secondAttribute="leading" id="lbS-kz-I9h"/>
+                            <constraint firstItem="LOU-XB-C7Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hSt-ft-Ph4" secondAttribute="trailing" id="llH-Fn-f0c"/>
+                            <constraint firstItem="hSt-ft-Ph4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82.5" id="o3c-pp-XAQ"/>
+                            <constraint firstItem="hSt-ft-Ph4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pQK-90-Yjg"/>
+                            <constraint firstItem="WF0-bC-Uhu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r5b-De-6pk"/>
+                            <constraint firstItem="Jpx-MU-0lh" firstAttribute="trailing" secondItem="WyM-Pk-aej" secondAttribute="trailing" id="rKP-RQ-Er4"/>
+                            <constraint firstItem="6mX-hw-frJ" firstAttribute="leading" secondItem="LOU-XB-C7Q" secondAttribute="leading" id="tC2-oG-IBm"/>
+                            <constraint firstItem="1TG-F5-xUn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-76" id="uc2-Ds-aPD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Top Famous Quotes " id="uES-QK-vY8">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pKQ-eD-sDV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b3l-YS-ds5">
+            <objects>
+                <viewController id="Ltl-gg-mb1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JwC-0o-3zm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-zZ-Oaa">
+                                <rect key="frame" x="0.0" y="263" width="375" height="404"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Felix Siauw  1. “Ibadah yang kita lakukan belum tentu berpahala sedangkan maksiat yang kita buat sudah pasti menghasilkan dosa.” 
+― Felix Y. Siauw  2. “See beyond the eyes can see, believe beyond the inspiration!” 
+― Felix Y. Siauw  3. “Berbicara itu mudah namun sulit dipertanggungjawabkan. Menulis lebih sulit namun lebih mudah dipertanggungjawabkan.” 
+― Felix Y. Siauw  4. “Berbicara itu mudah namun sulit dipertanggungjawabkan. Menulis lebih sulit namun lebih mudah dipertanggungjawabkan.” 
+― Felix Y. Siauw  5. “Berbicara itu mudah namun sulit dipertanggungjawabkan. Menulis lebih sulit namun lebih mudah dipertanggungjawabkan.” 
+― Felix Y. Siauw  6. “Apa yang tersimpan dalam dada, tak mampu dijangkau oleh mata. Karenanya lisan menjadi penanda, wajar orang menilai lewat kata.” 
+― Felix Y. Siauw  7. "wahai orang-orang yang beriman, penuhilah janji-janji itu" (QS 5:1), penuhi janji kepada Allah dan manusia ― Felix Y. Siauw
+ 8. "mencintai lalu menikahi itu perjuangan karenanya bertanggungjawab | mencintai lalu memacari itu tanpa komitmen dan miskin tanggungjawab" ― Felix Y. Siauw  9. "memang tiada cukup waktu bersama untuk dikenang | kutinggalkan semua dalam pengawasan Allah lalu bertenang" ― Felix Y. Siauw  10. "penuhi janji, atau jangan berjanji | bila sudah tak mampu penuhi, jangan menambah janji | hanya akan mengiris luka lagi"  ― Felix Y. Siauw </string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felix-siauw_20180403_133010.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gfD-G1-nCB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="UZ9-8z-8nR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oF9-zZ-Oaa" firstAttribute="trailing" secondItem="P5A-PR-aZ3" secondAttribute="trailing" id="BRb-eu-9Gm"/>
+                            <constraint firstItem="oF9-zZ-Oaa" firstAttribute="bottom" secondItem="P5A-PR-aZ3" secondAttribute="bottom" id="NSw-Zr-QQq"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="top" secondItem="P5A-PR-aZ3" secondAttribute="top" id="NeU-DZ-JTC"/>
+                            <constraint firstItem="oF9-zZ-Oaa" firstAttribute="top" secondItem="gfD-G1-nCB" secondAttribute="bottom" id="SCU-Vc-fhU"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="leading" secondItem="oF9-zZ-Oaa" secondAttribute="leading" id="UvH-eZ-YHs"/>
+                            <constraint firstItem="oF9-zZ-Oaa" firstAttribute="top" secondItem="gfD-G1-nCB" secondAttribute="bottom" id="g8t-4F-gUf"/>
+                            <constraint firstItem="oF9-zZ-Oaa" firstAttribute="leading" secondItem="P5A-PR-aZ3" secondAttribute="leading" id="izj-01-G71"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="top" secondItem="P5A-PR-aZ3" secondAttribute="top" id="k20-25-n4Y"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="trailing" secondItem="oF9-zZ-Oaa" secondAttribute="trailing" id="kKT-YR-caO"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="leading" secondItem="P5A-PR-aZ3" secondAttribute="leading" id="op6-ck-qDJ"/>
+                            <constraint firstItem="gfD-G1-nCB" firstAttribute="trailing" secondItem="P5A-PR-aZ3" secondAttribute="trailing" id="vey-Lv-Fs5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P5A-PR-aZ3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXK-MV-O8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fxI-ap-jFI">
+            <objects>
+                <viewController id="Bg8-kQ-N7Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbn-pD-shG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-oZ-01S">
+                                <rect key="frame" x="0.0" y="235" width="375" height="432"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Thomas alva edison  1. “Hanya karena sesuatu tidak sesuai dengan rencanamu bukan berarti itu sia sia.”
+- thomas alva edison
+
+2. “Aku mencari tahu apa yang dunia butuhkan. Lalu aku melangkah ke depan dan mencoba menciptakannya.”
+- thomas alva edison
+
+3. “Merasa tidak puas adalah langkah pertama untuk kemajuan”
+- thomas alva edison
+
+4. “Sukses adalah milik mereka yang rajin dan giat bekerja.”
+- thomas alva edison
+
+5. “Kesempatan yang terlewatkan banyak orang adalah karena berpakaian terlalu tertutup seperti saat bekerja.”
+- thomas alva edison
+
+6. “Banyak kegagalan dalam hidup, mereka tidak menyadari betapa dekatnya mereka dengan keberhasilan saat mereka menyerah.”
+- thomas alva edison
+
+7. “Fungsi utama dari tubuh adalah untuk membawa otak berkeliling.”
+- thomas alva edison
+
+8. “Aku memulai dimana orang terakhir menyerah”
+- thomas alva edison
+
+9. “Aku mencari tahu apa yang dunia butuhkan. Lalu aku melangkah ke depan dan mencoba menciptakannya.”
+- thomas alva edison
+
+10. “Lima persen orang berpikir, sepuluh persen orang berpikir mereka berpikir, dan 85 persen lainnya lebih suka meninggal daripada berpikir.”
+- thomas alva edison</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thomas.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-O9-uzJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="163"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="leading" secondItem="6BP-vk-5e8" secondAttribute="leading" id="0AB-VH-jJR"/>
+                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="top" secondItem="Hvi-O9-uzJ" secondAttribute="bottom" constant="8" id="1rx-n5-P8T"/>
+                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="trailing" secondItem="6BP-vk-5e8" secondAttribute="trailing" id="2MN-gm-SgD"/>
+                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="top" secondItem="Hvi-O9-uzJ" secondAttribute="bottom" constant="8" id="Ioo-6U-cAF"/>
+                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="bottom" secondItem="6BP-vk-5e8" secondAttribute="bottom" id="QGv-6J-iak"/>
+                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="trailing" secondItem="6BP-vk-5e8" secondAttribute="trailing" id="epN-vf-Ls3"/>
+                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="top" secondItem="6BP-vk-5e8" secondAttribute="top" id="etY-EH-OGk"/>
+                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="leading" secondItem="6BP-vk-5e8" secondAttribute="leading" id="oNM-4w-4Hx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6BP-vk-5e8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8M-FW-13P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514.4000000000001" y="148.87556221889056"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ezk-Ja-0cm">
+            <objects>
+                <viewController id="TOa-Ku-HfO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6K-Td-fBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mDW-BV-386">
+                                <rect key="frame" x="0.0" y="272" width="375" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Benyamin franklin  1. "Tulislah sesuatu yang layak dibaca atau lakukan sesuatu yang berharga untuk ditulis."
+- benyamin franklin
+
+2. "Setengah kebenaran sering kali merupakan kebohongan besar."
+- benyamin franklin
+
+3. "Tidur lebih awal dan bangun pagi membuat pria sehat, kaya dan bijaksana."
+- benyamin franklin
+
+4. "Konstitusi hanya memberi orang hak untuk mengejar kebahagiaan. Anda harus menangkapnya sendiri."
+- benyamin franklin
+
+5. "Karena gagal mempersiapkan, Anda bersiap untuk gagal."
+- benyamin franklin
+
+6. "Kerja bagus lebih baik daripada yang dikatakan dengan baik."
+- benyamin franklin
+
+7. "Kita semua terlahir bodoh, tetapi kita harus bekerja keras untuk tetap bodoh."
+- benyamin franklin
+
+8. "Tanpa pertumbuhan dan kemajuan yang berkelanjutan, kata-kata seperti peningkatan, pencapaian, dan kesuksesan tidak memiliki arti."
+- benyamin franklin
+
+9. "Katakan padaku dan aku lupa. Ajari aku dan aku ingat. Libatkan aku dan aku belajar."
+- benyamin franklin
+
+10. "Investasi dalam pengetahuan membayar bunga terbaik."
+- benyamin franklin</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benjaminfranklin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-q3-cJl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mDW-BV-386" firstAttribute="top" secondItem="4bW-da-Eul" secondAttribute="top" constant="208" id="1f9-M7-qtH"/>
+                            <constraint firstItem="DwL-q3-cJl" firstAttribute="top" secondItem="4bW-da-Eul" secondAttribute="top" id="Fjy-BP-ZFg"/>
+                            <constraint firstItem="mDW-BV-386" firstAttribute="top" secondItem="DwL-q3-cJl" secondAttribute="bottom" constant="8" id="Ghd-IP-bmV"/>
+                            <constraint firstItem="DwL-q3-cJl" firstAttribute="trailing" secondItem="4bW-da-Eul" secondAttribute="trailing" id="lpL-rS-Hat"/>
+                            <constraint firstItem="mDW-BV-386" firstAttribute="leading" secondItem="H6K-Td-fBZ" secondAttribute="leading" id="rsk-jn-zFz"/>
+                            <constraint firstItem="DwL-q3-cJl" firstAttribute="leading" secondItem="4bW-da-Eul" secondAttribute="leading" id="svv-bm-9j8"/>
+                            <constraint firstItem="mDW-BV-386" firstAttribute="bottom" secondItem="4bW-da-Eul" secondAttribute="bottom" id="vpB-TA-ojf"/>
+                            <constraint firstItem="mDW-BV-386" firstAttribute="trailing" secondItem="4bW-da-Eul" secondAttribute="trailing" id="xrT-U1-qIl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4bW-da-Eul"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0e-GM-fNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512.8" y="833.43328335832086"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sv0-gW-BtJ">
+            <objects>
+                <viewController id="wMs-wB-PmC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aF7-5X-vWb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ctG-Th-kwB">
+                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Ustadz Abdul Somad, Lc., MA  1. “Syukurilah semua yang diberikan Alllah SWT. Jika kau masih hidup bersyukurlah masih melakukan amal saleh. Jika kau mati tetap bersyukurlah, setidaknya dosamu tidak semakin bertambah.”
+- Ustadz Abdul Somad, Lc., MA
+
+2. “Ketika engkau susah di dunia ini. Sabarlah, karena ia hanya sementara. Ketika engkau diberi kesenangan di dunia ini jangan bangga dan sombong karen ia juga hanya sementara.”
+- Ustadz Abdul Somad, Lc., MA
+
+3. “Jika mencari kawan tak bercacat, selamanya kita takkan berkawan. Jika mencari pasangan yang sempurna, selamanya kita takkan berpasangan.”
+- Ustadz Abdul Somad, Lc., MA
+
+4. “Hari ini kita boleh kalah dalam segala hal, tapi tanamkan pada anak anak kita bahwa 10 atau 20 tahun lagi mereka akan memimpin negeri ini dengan cara yang Allah ridhai.”
+- Ustadz Abdul Somad, Lc., MA
+
+5. “Kalau dengan memiliki motor dan mobil bertambah ketaatan kita kepada Allah, maka itu adalah rezeki. Tapi kalau dengan kendaraan itu menjauhkan diri dari Allah, dipakai untuk pergi ke tempat maksiat, maka itu adalah laknat dan azab. Hati hati.”
+- Ustadz Abdul Somad, Lc., MA
+
+6. “Kebahagiaan seorang guru ialah ketika melihat muridnya sukses dunia dan akhirat”
+- Ustadz Abdul Somad, Lc., MA
+
+7. “Bahagia itu terletak pada syukur. Siapa yang bersyukur kepada Allah, maka dialah orang yang paling bahagia.”
+- Ustadz Abdul Somad, Lc., MA
+
+8. “Hidup ini seperti Bahtera di lautan. Di atas ada ombak kencang yang akan menghadang. Dari bawah ada batu karang yang besar. Tak ada yang bisa menguatkan hidup ini, kecuali Allah Ta'ala”
+- Ustadz Abdul Somad, Lc., MA
+
+9. “Kalau engkau sudah menikah maka pandanglah saudaramu yang belum menikah, maka akan timbul rasa syukur.”
+- Ustadz Abdul Somad, Lc., MA
+
+10. “Keberanian tidak mempercepat kematian, dan ketakutan tak dapat mengelakkan dari kematian. Kita pasti mati, tapi mati dalam keadaan apa? Pilihan ada di tangan kita.”
+- Ustadz Abdul Somad, Lc., MA
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abdul.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="98F-PP-AJp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="168"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="leading" secondItem="75k-3G-Af5" secondAttribute="leading" id="9VJ-k5-xpF"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="top" secondItem="75k-3G-Af5" secondAttribute="top" id="HHi-7B-khZ"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="leading" secondItem="75k-3G-Af5" secondAttribute="leading" id="WRl-W6-kNd"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="trailing" secondItem="75k-3G-Af5" secondAttribute="trailing" id="c3g-e3-JoR"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="top" secondItem="98F-PP-AJp" secondAttribute="bottom" constant="8" symbolic="YES" id="fjn-q6-M7w"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="bottom" secondItem="75k-3G-Af5" secondAttribute="bottom" id="qF3-zf-wsE"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="trailing" secondItem="75k-3G-Af5" secondAttribute="trailing" id="u7e-1f-ARY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="75k-3G-Af5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-pn-Vme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5999999999999" y="832.53373313343332"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dGJ-VK-DMY">
+            <objects>
+                <viewController id="yU5-Cd-0jl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wha-eK-nfm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remembering-nelson-mandelas-featured-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="buA-fO-0zS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="hZf-KC-0cW"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-IG-azN">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Nelson Mandela  1. “Kebencian/dendam itu seperti meminum racun dan kemudian berharap racun itu akan membunuh musuh Anda.”
+- nelson mandela
+
+2. “Ketika orang-orang berkemauan keras, mereka dapat mengatasi apapun.”
+- nelson mandela
+
+3. “Selalu saja sesuatu itu terlihat tak mungkin sampai seseorang bisa mewujudkannya.”
+- nelson mandela
+
+4. “Selalu saja sesuatu itu terlihat tak mungkin sampai seseorang bisa mewujudkannya.”
+- nelson mandela
+
+5. “Kemuliaan terbesar dalam hidup tidak disebabkan karena kita tidak pernah gagal , tetapi kemampuan untuk bangkit setiap kali kita jatuh.”
+- nelson mandela
+
+6. “Pendidikan adalah senjata paling ampuh yang dapat Anda gunakan untuk mengubah dunia.”
+- nelson mandela
+
+7. “Kebaikan manusia adalah api yang dapat disembunyikan tetapi tidak pernah bisa dipadamkan.”
+- nelson mandela
+
+8. “Pemimpin sejati harus siap mengorbankan semua untuk kebebasan rakyat mereka.”
+- nelson mandela
+
+9. “Kesulitan mematahkan beberapa orang, tetapi menempa orang lain.”
+- nelson mandela
+
+10. “Ketika seseorang telah melakukan apa yang ia anggap sebagai tugasnya untuk rakyat dan negerinya, ia bisa beristirahat dalam damai.”
+- nelson mandela</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="buA-fO-0zS" firstAttribute="trailing" secondItem="GfA-IG-azN" secondAttribute="trailing" id="GIs-7H-bZH"/>
+                            <constraint firstItem="GfA-IG-azN" firstAttribute="leading" secondItem="Zmj-Ca-zNX" secondAttribute="leading" id="Gnz-8I-Rtw"/>
+                            <constraint firstItem="GfA-IG-azN" firstAttribute="trailing" secondItem="Zmj-Ca-zNX" secondAttribute="trailing" id="e9z-Tu-QHn"/>
+                            <constraint firstItem="GfA-IG-azN" firstAttribute="top" secondItem="buA-fO-0zS" secondAttribute="bottom" constant="8" id="fDD-tT-LXQ"/>
+                            <constraint firstItem="GfA-IG-azN" firstAttribute="bottom" secondItem="Zmj-Ca-zNX" secondAttribute="bottom" id="lMr-DB-dj2"/>
+                            <constraint firstItem="buA-fO-0zS" firstAttribute="leading" secondItem="GfA-IG-azN" secondAttribute="leading" id="mbm-Ps-42D"/>
+                            <constraint firstItem="buA-fO-0zS" firstAttribute="top" secondItem="Zmj-Ca-zNX" secondAttribute="top" id="oj8-Kh-Hhp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zmj-Ca-zNX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdx-Ql-84Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="834.33283358320841"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zlg-l7-k67">
+            <objects>
+                <viewController id="cbo-RQ-zzk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1W-Mn-L4V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Albert_Einstein_Head.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-YH-pg3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="olk-ir-ID8"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KsC-QS-1ch">
+                                <rect key="frame" x="0.0" y="297" width="375" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Abert Einstein
+
+1. "Beberapa orang yang melihat dengan mata kepala sendiri dan merasa dengan hati mereka sendiri."
+- Albert Einstein
+
+2. "Imajinasi lebih penting daripada pengetahuan. Pengetahuan terbatas. Imajinasi melingkupi dunia."
+- Albert Einstein
+
+3. "Rasa hormat yang tidak masuk akal terhadap otoritas adalah musuh terbesar dari kebenaran."
+- Albert Einstein
+
+4. "Cobalah untuk tidak menjadi orang yang sukses, tetapi cobalah menjadi orang yang berharga."
+- Albert Einstein
+
+5. "Saya seorang keturunan Yahudi, dengan kewarganegaraan orang Swiss, dan dengan merias manusia, dan hanya manusia, tanpa keterikatan khusus dengan negara atau entitas nasional apa pun."
+- Albert Einstein
+
+6. "Semangat besar selalu menghadapi oposisi keras dari pikiran biasa-biasa saja."
+- Albert Einstein
+
+7. "Tidak semua yang bisa dihitung jumlahnya, dan tidak semua yang dihitung dapat dihitung."
+- Albert Einstein
+
+8. "Semua orang adalah jenius. Tetapi jika Anda menilai seekor ikan dengan kemampuannya memanjat pohon, ia akan hidup sepanjang hidupnya dengan percaya bahwa itu bodoh."
+- Albert Einstein
+
+9. "Inspirasi Albert Einstein mengutip - Semua orang adalah seorang Genius"
+- Albert Einstein
+
+10. "Lihatlah jauh ke alam, dan kemudian Anda akan memahami segalanya dengan lebih baik."
+- Albert Einstein</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x7h-YH-pg3" firstAttribute="top" secondItem="cax-Et-hHO" secondAttribute="top" id="2Yj-1X-se1"/>
+                            <constraint firstItem="KsC-QS-1ch" firstAttribute="top" secondItem="x7h-YH-pg3" secondAttribute="bottom" constant="8" id="AZg-zV-Isf"/>
+                            <constraint firstItem="x7h-YH-pg3" firstAttribute="leading" secondItem="KsC-QS-1ch" secondAttribute="leading" id="DCg-E7-IjM"/>
+                            <constraint firstItem="KsC-QS-1ch" firstAttribute="leading" secondItem="cax-Et-hHO" secondAttribute="leading" id="OJC-Tg-QqU"/>
+                            <constraint firstItem="KsC-QS-1ch" firstAttribute="bottom" secondItem="cax-Et-hHO" secondAttribute="bottom" id="dCL-nq-cQl"/>
+                            <constraint firstItem="KsC-QS-1ch" firstAttribute="trailing" secondItem="cax-Et-hHO" secondAttribute="trailing" id="f4m-F6-TYD"/>
+                            <constraint firstItem="KsC-QS-1ch" firstAttribute="top" secondItem="x7h-YH-pg3" secondAttribute="bottom" constant="8" id="rYm-WF-l3s"/>
+                            <constraint firstItem="x7h-YH-pg3" firstAttribute="trailing" secondItem="KsC-QS-1ch" secondAttribute="trailing" id="tNm-qj-Ug7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cax-Et-hHO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jx3-PU-kbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2896.8000000000002" y="112.89355322338831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bmN-GL-lWc">
+            <objects>
+                <viewController id="1X6-Vn-QQG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Dy-Mc-NVf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raditya-dika_20171205_134213.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GhE-kU-jcB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="199"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-XY-JH0">
+                                <rect key="frame" x="0.0" y="271" width="375" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Raditya Dika  1. “Apa yang harus kita lakukan pada kenangan yang memaksa untuk terus diingat?” 
+― Raditya Dika  2. “Apa yang harus kita lakukan pada kenangan yang memaksa untuk terus diingat?” 
+― Raditya Dika  3. “Lebih jauh lagi, gue gak percaya pada kebetulan, gue percaya pada pertemuan yang dirancang diam-diam. Masing-masing dari kita punya garis kehidupan yang telah digambarkan. Dan masing-masing dari kita, kalau diizinkan, akan saling bersinggungan.” 
+― Raditya Dika  4. “Lebih jauh lagi, gue gak percaya pada kebetulan, gue percaya pada pertemuan yang dirancang diam-diam. Masing-masing dari kita punya garis kehidupan yang telah digambarkan. Dan masing-masing dari kita, kalau diizinkan, akan saling bersinggungan.” 
+― Raditya Dika  5. “Hidup penuh dengan ketidakpastian, tetapi perpindahan adalah salah satu hal yang pasti” 
+― Raditya Dika  6. “Sinetron bukan hanya membuat bertemu orang sangat gampang, mereka bahkan membuat seolah-olah orang memang gampang dengan mudah jatuh cinta pada pandangan pertama, pada situasi apapun.” 
+― Raditya Dika  7. “Gue melihat orang yang bekerja kantoran tapi nggak sesuai dengan minat mereka itu seperti seekor ubur-ubur lembur. Lemah, lunglai, hanya hidup mengikuti arus.” 
+― Raditya Dika  8. “Ingin berjuang dan merubah negeri ini?
+Pilih sendiri medan perjuangan kamu...!!” 
+― Raditya Dika  9. “Sesungguhnya, terlalu perhatiannya orangtua kita adalah gangguan terindah yang pernah bisa kita terima” 
+― Raditya Dika  10. “Bagaimana semesta bisa berkonspirasi hingga dua orang bisa actually ketemu memang mendekati keajaiban.” 
+― Raditya Dika</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GhE-kU-jcB" firstAttribute="top" secondItem="meQ-Mv-BqC" secondAttribute="top" id="0ZB-Zb-dMb"/>
+                            <constraint firstItem="Qcg-XY-JH0" firstAttribute="top" secondItem="meQ-Mv-BqC" secondAttribute="top" constant="207" id="3OH-0B-kkl"/>
+                            <constraint firstItem="GhE-kU-jcB" firstAttribute="trailing" secondItem="meQ-Mv-BqC" secondAttribute="trailing" id="M3H-9R-Bkp"/>
+                            <constraint firstItem="Qcg-XY-JH0" firstAttribute="top" secondItem="GhE-kU-jcB" secondAttribute="bottom" constant="8" id="O0V-r3-xvv"/>
+                            <constraint firstItem="GhE-kU-jcB" firstAttribute="leading" secondItem="meQ-Mv-BqC" secondAttribute="leading" id="SCQ-aa-Nad"/>
+                            <constraint firstItem="Qcg-XY-JH0" firstAttribute="leading" secondItem="meQ-Mv-BqC" secondAttribute="leading" id="ei6-kr-h9B"/>
+                            <constraint firstItem="Qcg-XY-JH0" firstAttribute="trailing" secondItem="meQ-Mv-BqC" secondAttribute="trailing" id="khA-Ez-QtI"/>
+                            <constraint firstItem="Qcg-XY-JH0" firstAttribute="bottom" secondItem="meQ-Mv-BqC" secondAttribute="bottom" id="v4m-zw-TUq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="meQ-Mv-BqC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e34-RQ-ihK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5999999999999" y="148.87556221889056"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K8Q-g9-mXS">
+            <objects>
+                <viewController id="S7I-VM-dVx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bld-B4-5nz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-cK-Hcp">
+                                <rect key="frame" x="0.0" y="477" width="375" height="190"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Bill Gates  1. “Sukses adalah guru yang buruk. Ini menggoda orang pintar untuk berpikir bahwa mereka tidak boleh kalah. ”
+- Bill Gates
+
+2. "Jangan membandingkan diri Anda dengan siapa pun di dunia ini ... jika Anda melakukannya, Anda menghina diri sendiri."  - Bill Gates
+
+3. “Pelanggan Anda yang paling tidak bahagia adalah sumber belajar terbesar Anda.”
+- Bill Gates
+ 4. “Bersikap baik terhadap kutu buku. Kemungkinan Anda akhirnya akan bekerja untuk satu. "
+- Bill Gates
+
+5. "Hidup tidak adil - biasakanlah!"
+- Bill Gates
+
+6. "Kesabaran adalah elemen kunci kesuksesan."
+- Bill Gates
+
+7. "Tidak apa-apa untuk merayakan kesuksesan, tetapi lebih penting untuk memperhatikan pelajaran kegagalan."
+- Bill Gates
+
+8. "Untuk menang besar, Anda terkadang harus mengambil risiko besar."
+- Bill Gates
+
+9. “Saya memilih orang yang malas untuk melakukan pekerjaan yang sulit. Karena orang yang malas akan menemukan cara mudah untuk melakukannya. ”
+- Bill Gates
+
+10. "Jika Anda berpikir guru Anda tangguh, tunggu sampai Anda mendapatkan bos."
+- Bill Gates</string>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Gates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cs-ug-StF">
+                                <rect key="frame" x="146" y="132" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XpgonN0X_400x400.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LBz-uC-96l">
+                                <rect key="frame" x="67" y="64" width="240" height="399"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k3t-cK-Hcp" firstAttribute="top" secondItem="LBz-uC-96l" secondAttribute="bottom" constant="14" id="4An-Jx-TTz"/>
+                            <constraint firstItem="k3t-cK-Hcp" firstAttribute="bottom" secondItem="pjr-Vx-Sww" secondAttribute="bottom" id="6OG-m0-Iwj"/>
+                            <constraint firstItem="k3t-cK-Hcp" firstAttribute="top" secondItem="LBz-uC-96l" secondAttribute="bottom" constant="14" id="92S-a1-sYu"/>
+                            <constraint firstItem="k3t-cK-Hcp" firstAttribute="trailing" secondItem="pjr-Vx-Sww" secondAttribute="trailing" id="SzU-nH-6uL"/>
+                            <constraint firstItem="k3t-cK-Hcp" firstAttribute="leading" secondItem="pjr-Vx-Sww" secondAttribute="leading" id="U20-XJ-9xe"/>
+                            <constraint firstItem="LBz-uC-96l" firstAttribute="leading" secondItem="pjr-Vx-Sww" secondAttribute="leading" constant="67" id="jn6-cT-Xsp"/>
+                            <constraint firstItem="pjr-Vx-Sww" firstAttribute="trailing" secondItem="LBz-uC-96l" secondAttribute="trailing" constant="68" id="sPn-di-Yon"/>
+                            <constraint firstItem="LBz-uC-96l" firstAttribute="top" secondItem="pjr-Vx-Sww" secondAttribute="top" id="yx0-wX-uOG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pjr-Vx-Sww"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOu-jG-cuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="836.13193403298362"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lah-NO-hSP">
+            <objects>
+                <viewController id="N6j-dz-mt0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJx-cj-bbI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj-habibie_20161101_121342.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-qt-0wd">
+                                <rect key="frame" x="0.0" y="64" width="373" height="199"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MFJ-Ic-9e1">
+                                <rect key="frame" x="0.0" y="261" width="375" height="406"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">BJ Habibie  1. “Salah satu kunci kebahagiaan adalah menggunakan uang Anda untuk pengalaman bukan untuk keinginan.” - BJ Habibie  2. “Ketika seseorang menghina Anda, itu adalah sebuah pujian bahwa selama ini mereka menghabiskan banyak waktu untuk memikirkan Anda, bahkan ketika Anda tidak memikirkan mereka.”
+- BJ Habibie  3. “Tanpa cinta, kecerdasan itu berbahaya. dan tanpa kecerdasan, cinta itu tidak cukup.” - BJ Habibie  4. “Hiduplah seperti Anda akan mati besok. Dan berbahagialah seperti Anda akan hidup selamanya.” - BJ Habibie  5. “Harus konsisten dalam menekuni bidang disiplin ilmu yang Anda pelajari. Anda bisa menjadi konsisten seperti saya.” - BJ Habibie  6. Masa lalu saya adalah milik saya, masa lalu Anda adalah milik Anda, tapi masa depan adalah milik kita.”
+- BJ Habibie  7. “Nafsu hanya akan membawa kebahagiaan sesaat. Tetapi, cinta yang tulus dan sejati akan memberikan kebahagiaan yang sebenarnya.” - BJ Habibie  8. “Dalam hidup ini saya memiliki mental seperti orang yang bermain sepeda, bila saya tidak mengayuh sepeda maka saya akan jatuh, jika saya berhenti bekerja maka saya mati. - BJ Habibie  9. “Tidak ada gunanya IQ Anda tinggi namun malas, tidak miliki disiplin. Yang penting adalah Anda sehat dan mau berkorban untuk masa depan yang cerah.” - BJ Habibie  10. “Kalau bukan anak bangsa ini yang membangun bangsanya, siapa lagi? Jangan saudara mengharapkan orang lain yang datang membangun bangsa kita.” - BJ Habibie</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MFJ-Ic-9e1" firstAttribute="trailing" secondItem="O6v-V1-q2O" secondAttribute="trailing" id="7C4-cM-I58"/>
+                            <constraint firstItem="m0R-qt-0wd" firstAttribute="leading" secondItem="O6v-V1-q2O" secondAttribute="leading" id="ABZ-GY-SBp"/>
+                            <constraint firstItem="O6v-V1-q2O" firstAttribute="trailing" secondItem="m0R-qt-0wd" secondAttribute="trailing" constant="2" id="AR7-AL-XS8"/>
+                            <constraint firstItem="MFJ-Ic-9e1" firstAttribute="leading" secondItem="O6v-V1-q2O" secondAttribute="leading" id="Ay8-m7-lMs"/>
+                            <constraint firstItem="MFJ-Ic-9e1" firstAttribute="bottom" secondItem="O6v-V1-q2O" secondAttribute="bottom" id="STC-Y4-c3s"/>
+                            <constraint firstItem="MFJ-Ic-9e1" firstAttribute="top" secondItem="O6v-V1-q2O" secondAttribute="top" constant="197" id="bal-I0-ELB"/>
+                            <constraint firstItem="O6v-V1-q2O" firstAttribute="bottom" secondItem="m0R-qt-0wd" secondAttribute="bottom" constant="404" id="kXX-BG-0ki"/>
+                            <constraint firstItem="m0R-qt-0wd" firstAttribute="top" secondItem="O6v-V1-q2O" secondAttribute="top" id="wzs-x7-sAP"/>
+                            <constraint firstItem="m0R-qt-0wd" firstAttribute="top" secondItem="O6v-V1-q2O" secondAttribute="top" id="yB6-Gj-m5J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O6v-V1-q2O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6en-ie-2gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="834.33283358320841"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kuu-Eh-75h">
+            <objects>
+                <viewController id="Mjb-NW-N2l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQp-cr-hUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Presiden_Sukarno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VaE-Hc-0S3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="450"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-df-hjV">
+                                <rect key="frame" x="0.0" y="522" width="375" height="145"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Soekarno  1. “Kami menggoyangkan langit, menggempakan darat, dan menggelorakan samudera agar tidak jadi bangsa yang hidup hanya dari 2 ½ sen sehari. Bangsa yang kerja keras, bukan bangsa tempe, bukan bangsa kuli. Bangsa yang rela menderita demi pembelian cita-cita” 
+― Soekarno  2. “Bebek berjalan berbondong-bondong, akan tetapi burung elang terbang sendirian.” 
+― Soekarno  3. “I hate imperialism. I detest colonialism. And I fear the consequences of their last bitter struggle for life. We are determined, that our nation, and the world as a whole, shall not be the play thing of one small corner of the world” 
+― Soekarno  4. “ Learning without thinking is useless, but thinking without learning is very dangerous! ” 
+― Sukarno  5. “Insinyur (Sarjana) yang bekerja pada orang lain itu (masuk dalam golongan) proletar. Karena ia menjual tenaganya (kepada orang lain) dan alat alat produksi yang dia gunakan untuk bekerja bukan menjadi hak miliknya.” 
+― Sukarno  6. "Nasionalis yang sedjati, jang nasionalismenya itu bukan timbul semata-mata suatu copie atau tiruan dari nasionalisme barat akan tetapi timbul dari rasa tjinta akan manusia dan kemanusiaan” 
+― Sukarno  7. "Nasionalis yang sedjati, jang nasionalismenya itu bukan timbul semata-mata suatu copie atau tiruan dari nasionalisme barat akan tetapi timbul dari rasa tjinta akan manusia dan kemanusiaan” 
+― Sukarno  8. “Nasionalisme itu jalah suatu itikad; suatu keinsyafan rakjat bahwa rakjat itu ada satu golongan, satu "bangsa"!” 
+― Sukarno  9. “Jang mendatangkan pemberontakan-pemberontakan itu biasanja bagian-bagian jang terketjil, dan bagian-bagian jang terketjil sekali.” 
+― Sukarno  10. “Jang mendatangkan pemberontakan-pemberontakan itu biasanja bagian-bagian jang terketjil, dan bagian-bagian jang terketjil sekali.” 
+― Sukarno</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VaE-Hc-0S3" firstAttribute="top" secondItem="t3R-Gm-SzT" secondAttribute="top" id="Ae6-UL-hQ0"/>
+                            <constraint firstItem="mSz-df-hjV" firstAttribute="top" secondItem="t3R-Gm-SzT" secondAttribute="top" constant="458" id="C82-Rp-EBk"/>
+                            <constraint firstItem="VaE-Hc-0S3" firstAttribute="trailing" secondItem="t3R-Gm-SzT" secondAttribute="trailing" id="I7f-MH-q3L"/>
+                            <constraint firstItem="mSz-df-hjV" firstAttribute="trailing" secondItem="t3R-Gm-SzT" secondAttribute="trailing" id="M7S-Cg-tZb"/>
+                            <constraint firstItem="VaE-Hc-0S3" firstAttribute="leading" secondItem="t3R-Gm-SzT" secondAttribute="leading" id="N1f-Oc-deM"/>
+                            <constraint firstItem="mSz-df-hjV" firstAttribute="leading" secondItem="t3R-Gm-SzT" secondAttribute="leading" id="jMB-Pc-2Pc"/>
+                            <constraint firstItem="t3R-Gm-SzT" firstAttribute="bottom" secondItem="VaE-Hc-0S3" secondAttribute="bottom" constant="153" id="lD8-o1-bjP"/>
+                            <constraint firstItem="mSz-df-hjV" firstAttribute="bottom" secondItem="t3R-Gm-SzT" secondAttribute="bottom" id="pDC-hF-FCZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t3R-Gm-SzT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfK-2Q-HJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-663.20000000000005" y="834.33283358320841"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TUt-yO-qRz">
+            <objects>
+                <navigationController id="Pyu-hp-dat" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xKo-nI-P0H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UxG-AZ-liE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsq-2M-YRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="-11"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Albert_Einstein_Head.jpg" width="3250" height="4333"/>
+        <image name="Presiden_Sukarno.jpg" width="3214" height="4604"/>
+        <image name="XpgonN0X_400x400.jpg" width="399" height="399"/>
+        <image name="abdul.jpeg" width="300" height="168"/>
+        <image name="benjaminfranklin.jpg" width="550" height="311"/>
+        <image name="bj-habibie_20161101_121342.jpg" width="700" height="393"/>
+        <image name="felix-siauw_20180403_133010.jpg" width="700" height="393"/>
+        <image name="mono.jpg" width="852" height="480"/>
+        <image name="raditya-dika_20171205_134213.jpg" width="700" height="393"/>
+        <image name="remembering-nelson-mandelas-featured-photo.jpg" width="768" height="432"/>
+        <image name="thomas.jpeg" width="310" height="163"/>
+    </resources>
 </document>
