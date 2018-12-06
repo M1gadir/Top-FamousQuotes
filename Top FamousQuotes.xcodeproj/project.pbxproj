@@ -7,35 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E40F632A217438560027FF09 /* XpgonN0X_400x400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40F6329217438560027FF09 /* XpgonN0X_400x400.jpg */; };
-		E40F632C217439570027FF09 /* benjaminfranklin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40F632B217439570027FF09 /* benjaminfranklin.jpg */; };
-		E40F632E21743E2B0027FF09 /* thomas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E40F632D21743E2A0027FF09 /* thomas.jpeg */; };
-		E40F6330217440480027FF09 /* raditya-dika_20171205_134213.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40F632F217440480027FF09 /* raditya-dika_20171205_134213.jpg */; };
-		E40F6332217442D80027FF09 /* abdul.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E40F6331217442D70027FF09 /* abdul.jpeg */; };
-		E40F6334217445490027FF09 /* Albert_Einstein_Head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40F6333217445490027FF09 /* Albert_Einstein_Head.jpg */; };
-		E40F63362174482A0027FF09 /* remembering-nelson-mandelas-featured-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40F6335217448270027FF09 /* remembering-nelson-mandelas-featured-photo.jpg */; };
-		E448F0C6217377D100D29DB2 /* bj-habibie_20161101_121342.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448F0C3217377D100D29DB2 /* bj-habibie_20161101_121342.jpg */; };
-		E448F0C7217377D100D29DB2 /* felix-siauw_20180403_133010.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448F0C4217377D100D29DB2 /* felix-siauw_20180403_133010.jpg */; };
-		E448F0C8217377D100D29DB2 /* Presiden_Sukarno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448F0C5217377D100D29DB2 /* Presiden_Sukarno.jpg */; };
+		524110A321B8A57D00D30979 /* felix-siauw_20180820_161220.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110A021B8A57C00D30979 /* felix-siauw_20180820_161220.jpg */; };
+		524110A421B8A57D00D30979 /* mono.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110A121B8A57D00D30979 /* mono.jpg */; };
+		524110A521B8A57D00D30979 /* bj-habibie_20170330_122156.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110A221B8A57D00D30979 /* bj-habibie_20170330_122156.jpg */; };
+		524110A721B8A5CB00D30979 /* raditya-dika_20171205_134213.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110A621B8A5CB00D30979 /* raditya-dika_20171205_134213.jpg */; };
+		524110A921B8A62600D30979 /* Presiden_Sukarno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110A821B8A62400D30979 /* Presiden_Sukarno.jpg */; };
+		524110AB21B8A69700D30979 /* Z04TeLQ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110AA21B8A69700D30979 /* Z04TeLQ.jpg */; };
+		524110AF21B8A72800D30979 /* BenjaminFranklin960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110AE21B8A72800D30979 /* BenjaminFranklin960.jpg */; };
+		524110B121B8A74B00D30979 /* XpgonN0X_400x400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110B021B8A74A00D30979 /* XpgonN0X_400x400.jpg */; };
+		524110B521B8A7B900D30979 /* thomas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110B421B8A7B800D30979 /* thomas.jpg */; };
+		524110B821B8A85800D30979 /* _102573763_mediaitem102573759.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110B621B8A85700D30979 /* _102573763_mediaitem102573759.jpg */; };
+		524110B921B8A85800D30979 /* ustadz-abdul-somad_20180226_075312.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 524110B721B8A85800D30979 /* ustadz-abdul-somad_20180226_075312.jpg */; };
 		E49249CE2170A91300656A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49249CD2170A91300656A27 /* AppDelegate.swift */; };
 		E49249D02170A91300656A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49249CF2170A91300656A27 /* ViewController.swift */; };
 		E49249D32170A91300656A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49249D12170A91300656A27 /* Main.storyboard */; };
 		E49249D52170A91500656A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49249D42170A91500656A27 /* Assets.xcassets */; };
 		E49249D82170A91500656A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49249D62170A91500656A27 /* LaunchScreen.storyboard */; };
-		E496C3142170F12C00E3BF9F /* mono.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E496C3132170F12C00E3BF9F /* mono.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E40F6329217438560027FF09 /* XpgonN0X_400x400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = XpgonN0X_400x400.jpg; path = ../../../Downloads/XpgonN0X_400x400.jpg; sourceTree = "<group>"; };
-		E40F632B217439570027FF09 /* benjaminfranklin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benjaminfranklin.jpg; path = ../../../Downloads/benjaminfranklin.jpg; sourceTree = "<group>"; };
-		E40F632D21743E2A0027FF09 /* thomas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thomas.jpeg; path = ../../../Downloads/thomas.jpeg; sourceTree = "<group>"; };
-		E40F632F217440480027FF09 /* raditya-dika_20171205_134213.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "raditya-dika_20171205_134213.jpg"; path = "../../../Downloads/raditya-dika_20171205_134213.jpg"; sourceTree = "<group>"; };
-		E40F6331217442D70027FF09 /* abdul.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = abdul.jpeg; path = ../../../Downloads/abdul.jpeg; sourceTree = "<group>"; };
-		E40F6333217445490027FF09 /* Albert_Einstein_Head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Albert_Einstein_Head.jpg; path = ../../../Downloads/Albert_Einstein_Head.jpg; sourceTree = "<group>"; };
-		E40F6335217448270027FF09 /* remembering-nelson-mandelas-featured-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "remembering-nelson-mandelas-featured-photo.jpg"; path = "../../../Downloads/remembering-nelson-mandelas-featured-photo.jpg"; sourceTree = "<group>"; };
-		E448F0C3217377D100D29DB2 /* bj-habibie_20161101_121342.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bj-habibie_20161101_121342.jpg"; path = "../../../Downloads/bj-habibie_20161101_121342.jpg"; sourceTree = "<group>"; };
-		E448F0C4217377D100D29DB2 /* felix-siauw_20180403_133010.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "felix-siauw_20180403_133010.jpg"; path = "../../../Downloads/felix-siauw_20180403_133010.jpg"; sourceTree = "<group>"; };
-		E448F0C5217377D100D29DB2 /* Presiden_Sukarno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Presiden_Sukarno.jpg; path = ../../../Downloads/Presiden_Sukarno.jpg; sourceTree = "<group>"; };
+		524110A021B8A57C00D30979 /* felix-siauw_20180820_161220.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "felix-siauw_20180820_161220.jpg"; sourceTree = "<group>"; };
+		524110A121B8A57D00D30979 /* mono.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mono.jpg; sourceTree = "<group>"; };
+		524110A221B8A57D00D30979 /* bj-habibie_20170330_122156.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bj-habibie_20170330_122156.jpg"; sourceTree = "<group>"; };
+		524110A621B8A5CB00D30979 /* raditya-dika_20171205_134213.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "raditya-dika_20171205_134213.jpg"; sourceTree = "<group>"; };
+		524110A821B8A62400D30979 /* Presiden_Sukarno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Presiden_Sukarno.jpg; sourceTree = "<group>"; };
+		524110AA21B8A69700D30979 /* Z04TeLQ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Z04TeLQ.jpg; sourceTree = "<group>"; };
+		524110AE21B8A72800D30979 /* BenjaminFranklin960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BenjaminFranklin960.jpg; sourceTree = "<group>"; };
+		524110B021B8A74A00D30979 /* XpgonN0X_400x400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = XpgonN0X_400x400.jpg; sourceTree = "<group>"; };
+		524110B421B8A7B800D30979 /* thomas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thomas.jpg; path = ../../Downloads/thomas.jpg; sourceTree = "<group>"; };
+		524110B621B8A85700D30979 /* _102573763_mediaitem102573759.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _102573763_mediaitem102573759.jpg; sourceTree = "<group>"; };
+		524110B721B8A85800D30979 /* ustadz-abdul-somad_20180226_075312.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ustadz-abdul-somad_20180226_075312.jpg"; sourceTree = "<group>"; };
 		E49249CA2170A91300656A27 /* Top FamousQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top FamousQuotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49249CD2170A91300656A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49249CF2170A91300656A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		E49249D42170A91500656A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49249D72170A91500656A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E49249D92170A91500656A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E496C3132170F12C00E3BF9F /* mono.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mono.jpg; path = ../../../Downloads/mono.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,17 +62,17 @@
 			children = (
 				E49249CC2170A91300656A27 /* Top FamousQuotes */,
 				E49249CB2170A91300656A27 /* Products */,
-				E496C3132170F12C00E3BF9F /* mono.jpg */,
-				E448F0C3217377D100D29DB2 /* bj-habibie_20161101_121342.jpg */,
-				E448F0C4217377D100D29DB2 /* felix-siauw_20180403_133010.jpg */,
-				E448F0C5217377D100D29DB2 /* Presiden_Sukarno.jpg */,
-				E40F6335217448270027FF09 /* remembering-nelson-mandelas-featured-photo.jpg */,
-				E40F6329217438560027FF09 /* XpgonN0X_400x400.jpg */,
-				E40F632B217439570027FF09 /* benjaminfranklin.jpg */,
-				E40F632D21743E2A0027FF09 /* thomas.jpeg */,
-				E40F6333217445490027FF09 /* Albert_Einstein_Head.jpg */,
-				E40F6331217442D70027FF09 /* abdul.jpeg */,
-				E40F632F217440480027FF09 /* raditya-dika_20171205_134213.jpg */,
+				524110A621B8A5CB00D30979 /* raditya-dika_20171205_134213.jpg */,
+				524110B021B8A74A00D30979 /* XpgonN0X_400x400.jpg */,
+				524110A221B8A57D00D30979 /* bj-habibie_20170330_122156.jpg */,
+				524110A021B8A57C00D30979 /* felix-siauw_20180820_161220.jpg */,
+				524110A121B8A57D00D30979 /* mono.jpg */,
+				524110A821B8A62400D30979 /* Presiden_Sukarno.jpg */,
+				524110AA21B8A69700D30979 /* Z04TeLQ.jpg */,
+				524110AE21B8A72800D30979 /* BenjaminFranklin960.jpg */,
+				524110B421B8A7B800D30979 /* thomas.jpg */,
+				524110B621B8A85700D30979 /* _102573763_mediaitem102573759.jpg */,
+				524110B721B8A85800D30979 /* ustadz-abdul-somad_20180226_075312.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,20 +155,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40F63362174482A0027FF09 /* remembering-nelson-mandelas-featured-photo.jpg in Resources */,
-				E40F632C217439570027FF09 /* benjaminfranklin.jpg in Resources */,
-				E448F0C8217377D100D29DB2 /* Presiden_Sukarno.jpg in Resources */,
-				E448F0C7217377D100D29DB2 /* felix-siauw_20180403_133010.jpg in Resources */,
-				E40F632E21743E2B0027FF09 /* thomas.jpeg in Resources */,
-				E40F6334217445490027FF09 /* Albert_Einstein_Head.jpg in Resources */,
-				E448F0C6217377D100D29DB2 /* bj-habibie_20161101_121342.jpg in Resources */,
-				E496C3142170F12C00E3BF9F /* mono.jpg in Resources */,
-				E40F632A217438560027FF09 /* XpgonN0X_400x400.jpg in Resources */,
-				E40F6330217440480027FF09 /* raditya-dika_20171205_134213.jpg in Resources */,
+				524110B121B8A74B00D30979 /* XpgonN0X_400x400.jpg in Resources */,
+				524110A421B8A57D00D30979 /* mono.jpg in Resources */,
+				524110A721B8A5CB00D30979 /* raditya-dika_20171205_134213.jpg in Resources */,
+				524110A321B8A57D00D30979 /* felix-siauw_20180820_161220.jpg in Resources */,
+				524110A921B8A62600D30979 /* Presiden_Sukarno.jpg in Resources */,
 				E49249D82170A91500656A27 /* LaunchScreen.storyboard in Resources */,
+				524110AB21B8A69700D30979 /* Z04TeLQ.jpg in Resources */,
+				524110B521B8A7B900D30979 /* thomas.jpg in Resources */,
 				E49249D52170A91500656A27 /* Assets.xcassets in Resources */,
-				E40F6332217442D80027FF09 /* abdul.jpeg in Resources */,
+				524110B921B8A85800D30979 /* ustadz-abdul-somad_20180226_075312.jpg in Resources */,
+				524110AF21B8A72800D30979 /* BenjaminFranklin960.jpg in Resources */,
 				E49249D32170A91300656A27 /* Main.storyboard in Resources */,
+				524110B821B8A85800D30979 /* _102573763_mediaitem102573759.jpg in Resources */,
+				524110A521B8A57D00D30979 /* bj-habibie_20170330_122156.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

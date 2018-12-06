@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TG-F5-xUn">
-                                <rect key="frame" x="207.5" y="242" width="125" height="30"/>
+                                <rect key="frame" x="220" y="242" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Felix Siauw"/>
                                 <connections>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-gW-3D3">
-                                <rect key="frame" x="207.5" y="171" width="125" height="30"/>
+                                <rect key="frame" x="220" y="171" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Albert Einstein"/>
                                 <connections>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fY-5c-Lt9">
-                                <rect key="frame" x="207.5" y="319" width="125" height="30"/>
+                                <rect key="frame" x="220" y="319" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Raditya Dika"/>
                                 <connections>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nch-hZ-4K2">
-                                <rect key="frame" x="207.5" y="399" width="125" height="30"/>
+                                <rect key="frame" x="208" y="399" width="125" height="30"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Benyamin Franklin"/>
                                 <connections>
@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-zd-6Ov">
-                                <rect key="frame" x="207.5" y="462" width="125" height="30"/>
+                                <rect key="frame" x="208" y="462" width="125" height="30"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Bill Gates"/>
                                 <connections>
@@ -133,12 +133,11 @@
                             <constraint firstItem="7fY-5c-Lt9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Th5-oe-kTC"/>
                             <constraint firstItem="WyM-Pk-aej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-76" id="Tzl-GC-uRJ"/>
                             <constraint firstItem="1TG-F5-xUn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7fY-5c-Lt9" secondAttribute="trailing" id="Wvs-cX-czy"/>
-                            <constraint firstItem="nch-hZ-4K2" firstAttribute="trailing" secondItem="7fY-5c-Lt9" secondAttribute="trailing" id="XC2-7H-nYy"/>
                             <constraint firstItem="tdM-gW-3D3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="82" id="XRA-1q-EzV"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="leading" secondItem="nch-hZ-4K2" secondAttribute="leading" id="Zzs-oM-7He"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WF0-bC-Uhu" secondAttribute="bottom" id="aQF-tJ-b7m"/>
                             <constraint firstItem="WyM-Pk-aej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82" id="aoy-gK-IpE"/>
-                            <constraint firstItem="nch-hZ-4K2" firstAttribute="leading" secondItem="7fY-5c-Lt9" secondAttribute="leading" id="aw2-XP-SKh"/>
-                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="trailing" secondItem="nch-hZ-4K2" secondAttribute="trailing" id="cEM-wf-1T1"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nch-hZ-4K2" secondAttribute="trailing" id="cEM-wf-1T1"/>
                             <constraint firstItem="tdM-gW-3D3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1TG-F5-xUn" secondAttribute="trailing" id="cdA-0x-0t8"/>
                             <constraint firstItem="7fY-5c-Lt9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="82.5" id="dFV-zw-Wvg"/>
                             <constraint firstItem="LOU-XB-C7Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="dQc-sO-DY3"/>
@@ -146,7 +145,7 @@
                             <constraint firstItem="tdM-gW-3D3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1TG-F5-xUn" secondAttribute="leading" id="g8h-cf-f6n"/>
                             <constraint firstItem="tdM-gW-3D3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-147.5" id="h34-2K-a8W"/>
                             <constraint firstItem="hSt-ft-Ph4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WyM-Pk-aej" secondAttribute="trailing" id="l0b-78-wUY"/>
-                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="leading" secondItem="nch-hZ-4K2" secondAttribute="leading" id="lbS-kz-I9h"/>
+                            <constraint firstItem="Jer-zd-6Ov" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nch-hZ-4K2" secondAttribute="leading" id="lbS-kz-I9h"/>
                             <constraint firstItem="LOU-XB-C7Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hSt-ft-Ph4" secondAttribute="trailing" id="llH-Fn-f0c"/>
                             <constraint firstItem="hSt-ft-Ph4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-82.5" id="o3c-pp-XAQ"/>
                             <constraint firstItem="hSt-ft-Ph4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pQK-90-Yjg"/>
@@ -154,6 +153,7 @@
                             <constraint firstItem="Jpx-MU-0lh" firstAttribute="trailing" secondItem="WyM-Pk-aej" secondAttribute="trailing" id="rKP-RQ-Er4"/>
                             <constraint firstItem="6mX-hw-frJ" firstAttribute="leading" secondItem="LOU-XB-C7Q" secondAttribute="leading" id="tC2-oG-IBm"/>
                             <constraint firstItem="1TG-F5-xUn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-76" id="uc2-Ds-aPD"/>
+                            <constraint firstItem="nch-hZ-4K2" firstAttribute="centerX" secondItem="7fY-5c-Lt9" secondAttribute="centerX" id="xbd-1z-GUF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -188,7 +188,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felix-siauw_20180403_133010.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gfD-G1-nCB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felix-siauw_20180820_161220.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gfD-G1-nCB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="199"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="199" id="UZ9-8z-8nR"/>
@@ -224,8 +224,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-oZ-01S">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-oZ-01S">
                                 <rect key="frame" x="0.0" y="235" width="375" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Thomas alva edison  1. “Hanya karena sesuatu tidak sesuai dengan rencanamu bukan berarti itu sia sia.”
 - thomas alva edison
@@ -259,21 +260,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thomas.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-O9-uzJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thomas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-O9-uzJ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="leading" secondItem="6BP-vk-5e8" secondAttribute="leading" id="0AB-VH-jJR"/>
-                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="top" secondItem="Hvi-O9-uzJ" secondAttribute="bottom" constant="8" id="1rx-n5-P8T"/>
-                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="trailing" secondItem="6BP-vk-5e8" secondAttribute="trailing" id="2MN-gm-SgD"/>
-                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="top" secondItem="Hvi-O9-uzJ" secondAttribute="bottom" constant="8" id="Ioo-6U-cAF"/>
-                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="bottom" secondItem="6BP-vk-5e8" secondAttribute="bottom" id="QGv-6J-iak"/>
-                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="trailing" secondItem="6BP-vk-5e8" secondAttribute="trailing" id="epN-vf-Ls3"/>
-                            <constraint firstItem="Hvi-O9-uzJ" firstAttribute="top" secondItem="6BP-vk-5e8" secondAttribute="top" id="etY-EH-OGk"/>
-                            <constraint firstItem="Tx9-oZ-01S" firstAttribute="leading" secondItem="6BP-vk-5e8" secondAttribute="leading" id="oNM-4w-4Hx"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6BP-vk-5e8"/>
                     </view>
                 </viewController>
@@ -324,7 +316,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benjaminfranklin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-q3-cJl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BenjaminFranklin960.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-q3-cJl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="200"/>
                             </imageView>
                         </subviews>
@@ -355,7 +347,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ctG-Th-kwB">
-                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                                <rect key="frame" x="0.0" y="266" width="375" height="401"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Ustadz Abdul Somad, Lc., MA  1. “Syukurilah semua yang diberikan Alllah SWT. Jika kau masih hidup bersyukurlah masih melakukan amal saleh. Jika kau mati tetap bersyukurlah, setidaknya dosamu tidak semakin bertambah.”
 - Ustadz Abdul Somad, Lc., MA
@@ -390,19 +382,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abdul.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="98F-PP-AJp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="168"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ustadz-abdul-somad_20180226_075312.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="98F-PP-AJp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="NFc-JA-k5M"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="98F-PP-AJp" firstAttribute="leading" secondItem="75k-3G-Af5" secondAttribute="leading" id="9VJ-k5-xpF"/>
-                            <constraint firstItem="98F-PP-AJp" firstAttribute="top" secondItem="75k-3G-Af5" secondAttribute="top" id="HHi-7B-khZ"/>
-                            <constraint firstItem="ctG-Th-kwB" firstAttribute="leading" secondItem="75k-3G-Af5" secondAttribute="leading" id="WRl-W6-kNd"/>
-                            <constraint firstItem="98F-PP-AJp" firstAttribute="trailing" secondItem="75k-3G-Af5" secondAttribute="trailing" id="c3g-e3-JoR"/>
-                            <constraint firstItem="ctG-Th-kwB" firstAttribute="top" secondItem="98F-PP-AJp" secondAttribute="bottom" constant="8" symbolic="YES" id="fjn-q6-M7w"/>
-                            <constraint firstItem="ctG-Th-kwB" firstAttribute="bottom" secondItem="75k-3G-Af5" secondAttribute="bottom" id="qF3-zf-wsE"/>
-                            <constraint firstItem="ctG-Th-kwB" firstAttribute="trailing" secondItem="75k-3G-Af5" secondAttribute="trailing" id="u7e-1f-ARY"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="leading" secondItem="ctG-Th-kwB" secondAttribute="leading" id="4Ve-Fa-TfF"/>
+                            <constraint firstAttribute="trailing" secondItem="98F-PP-AJp" secondAttribute="trailing" id="7fj-Gq-qk6"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="bottom" secondItem="75k-3G-Af5" secondAttribute="bottom" id="Q2n-8T-TJh"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="trailing" secondItem="ctG-Th-kwB" secondAttribute="trailing" id="RSM-LP-BT4"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="top" secondItem="75k-3G-Af5" secondAttribute="top" id="ReG-YX-xaQ"/>
+                            <constraint firstItem="98F-PP-AJp" firstAttribute="leading" secondItem="aF7-5X-vWb" secondAttribute="leading" id="qd0-Vn-U14"/>
+                            <constraint firstItem="ctG-Th-kwB" firstAttribute="top" secondItem="98F-PP-AJp" secondAttribute="bottom" constant="8" symbolic="YES" id="z1e-9M-hzh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="75k-3G-Af5"/>
                     </view>
@@ -419,7 +414,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remembering-nelson-mandelas-featured-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="buA-fO-0zS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_102573763_mediaitem102573759.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="buA-fO-0zS">
                                 <rect key="frame" x="0.0" y="64" width="375" height="197"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="197" id="hZf-KC-0cW"/>
@@ -486,7 +481,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Albert_Einstein_Head.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-YH-pg3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Z04TeLQ.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-YH-pg3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="olk-ir-ID8"/>
@@ -674,7 +669,7 @@ Pilih sendiri medan perjuangan kamu...!!”
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj-habibie_20161101_121342.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-qt-0wd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj-habibie_20170330_122156.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-qt-0wd">
                                 <rect key="frame" x="0.0" y="64" width="373" height="199"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MFJ-Ic-9e1">
@@ -771,16 +766,16 @@ Pilih sendiri medan perjuangan kamu...!!”
         </scene>
     </scenes>
     <resources>
-        <image name="Albert_Einstein_Head.jpg" width="3250" height="4333"/>
+        <image name="BenjaminFranklin960.jpg" width="960" height="480"/>
         <image name="Presiden_Sukarno.jpg" width="3214" height="4604"/>
         <image name="XpgonN0X_400x400.jpg" width="399" height="399"/>
-        <image name="abdul.jpeg" width="300" height="168"/>
-        <image name="benjaminfranklin.jpg" width="550" height="311"/>
-        <image name="bj-habibie_20161101_121342.jpg" width="700" height="393"/>
-        <image name="felix-siauw_20180403_133010.jpg" width="700" height="393"/>
+        <image name="Z04TeLQ.jpg" width="1920" height="1200"/>
+        <image name="_102573763_mediaitem102573759.jpg" width="912" height="513"/>
+        <image name="bj-habibie_20170330_122156.jpg" width="700" height="393"/>
+        <image name="felix-siauw_20180820_161220.jpg" width="700" height="393"/>
         <image name="mono.jpg" width="852" height="480"/>
         <image name="raditya-dika_20171205_134213.jpg" width="700" height="393"/>
-        <image name="remembering-nelson-mandelas-featured-photo.jpg" width="768" height="432"/>
-        <image name="thomas.jpeg" width="310" height="163"/>
+        <image name="thomas.jpg" width="1200" height="630"/>
+        <image name="ustadz-abdul-somad_20180226_075312.jpg" width="700" height="393"/>
     </resources>
 </document>
